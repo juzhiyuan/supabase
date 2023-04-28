@@ -82,11 +82,13 @@ const Hero = () => {
       </SectionContainer>
       <div
         className={[
-          'absolute z-[-4] flex flex-col top-0 left-0 w-screen h-auto overflow-hidden pointer-events-none',
+          'absolute z-[-4] flex flex-col top-0 left-0 w-screen h-screen overflow-hidden pointer-events-none',
         ].join(' ')}
       >
-        <div className="w-full h-[250px] md:h-[200px] xl:h-[100px] 2xl:h-[50px] bg-[#171717]" />
-        <div className={['w-full', styles['triangle-shape']].join(' ')} />
+        {/* <div className="w-full h-[250px] md:h-[200px] xl:h-[100px] 2xl:h-[50px] bg-[#171717]" /> */}
+        <div className="absolute w-screen h-screen">
+          <div className={['backdrop-blur', styles['triangle-shape']].join(' ')} />
+        </div>
         <div className={['w-full', styles['gradient']].join(' ')} />
       </div>
       <div
