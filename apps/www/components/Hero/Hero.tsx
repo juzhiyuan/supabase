@@ -23,7 +23,7 @@ const Hero = () => {
                         "
                   >
                     <span className="block">Build in a weekend.</span>
-                    <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#3ECF8E] to-[#3E9BCF] block md:ml-0">
+                    <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#3ECF8E] via-[#3ECF8E] to-[#3E9BCF] block md:ml-0">
                       Scale to millions.
                     </span>
                   </h1>
@@ -82,7 +82,16 @@ const Hero = () => {
       </SectionContainer>
       <div
         className={[
-          'absolute top-0 left-0 w-full h-screen overflow-hidden pointer-events-none',
+          'absolute z-[-4] flex flex-col top-0 left-0 w-screen h-auto overflow-hidden pointer-events-none',
+        ].join(' ')}
+      >
+        <div className="w-full h-[250px] md:h-[200px] xl:h-[100px] 2xl:h-[50px] bg-[#171717]" />
+        <div className={['w-full', styles['triangle-shape']].join(' ')} />
+        <div className={['w-full', styles['gradient']].join(' ')} />
+      </div>
+      <div
+        className={[
+          'absolute top-0 left-0 w-full h-[500px] lg:h-[600px] overflow-hidden pointer-events-none',
           styles['hero-container'],
         ].join(' ')}
       >
