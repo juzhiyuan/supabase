@@ -17,8 +17,8 @@
     linear-gradient(180deg, #000 0.3px, transparent 0);
   mask-image: linear-gradient(90deg, #000 0.3px, #000 0),
     linear-gradient(180deg, #000 0.3px, #000 0);
-  -webkit-mask-size: 40px 40px;
-  mask-size: 40px 40px;
+  -webkit-mask-size: 30px 30px;
+  mask-size: 30px 30px;
   overflow: hidden;
   -webkit-mask-repeat: repeat;
   mask-repeat: repeat;
@@ -33,7 +33,6 @@
 }
 
 .gradient {
-  content: '';
   position: absolute;
   user-select: none;
   pointer-events: none;
@@ -42,15 +41,18 @@
   opacity: 0.6;
   filter: blur(140px);
   transform: translateZ(0px);
-  background: radial-gradient(ellipse 50% 25% at 50% 30%, #3ecf8e, rgba(0, 0, 0, 0));
+  background: radial-gradient(ellipse 50% 45% at 50% 40%, #3ecf8e, rgba(0, 0, 0, 0));
 }
 
 .triangle-shape {
-  width: 100vw;
-  height: 100vw;
-  transform: rotate(45deg) translate3d(-47vw, -47vw, 0);
-  transform-origin: 50%;
-  background: radial-gradient(ellipse 64% 64% at 40% 40%, #172e29, #171717);
+  width: 200vw;
+  height: 200vw;
+  transform: rotate(45deg) translate3d(-100vw, -100vw, 0);
+  background: radial-gradient(
+    ellipse 64% 64% at 40% 40%,
+    var(--colors-brand1),
+    var(--colors-scale1)
+  );
 }
 
 @media (min-width: 1024px) {
